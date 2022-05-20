@@ -39,8 +39,7 @@ jobs:
       - name: Install Golang Migrate
         run: |
           curl -L https://github.com/golang-migrate/migrate/releases/download/v4.15.2/migrate.linux-amd64.tar.gz | tar xvz
-          sudo mv /usr/bin/migrate
-          which migrate
+          sudo which migrate
 
       - name: Run migrations
         run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose up
