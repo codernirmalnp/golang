@@ -4,9 +4,11 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"test/api"
-	db "test/db/sqlc"
-	"test/db/util"
+
+	db "github.com/codernirmalnp/golang/db/sqlc"
+	"github.com/codernirmalnp/golang/db/util"
+
+	"github.com/codernirmalnp/golang/api"
 
 	_ "github.com/lib/pq"
 )

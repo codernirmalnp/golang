@@ -3,7 +3,8 @@ package api
 import (
 	"database/sql"
 	"net/http"
-	db "test/db/sqlc"
+
+	db "github.com/codernirmalnp/golang/db/sqlc"
 
 	"github.com/gin-gonic/gin"
 )
