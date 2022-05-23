@@ -44,12 +44,11 @@ jobs:
           sudo mv migrate /usr/bin/migrate
           which migrate
 
-      - name: Run migrations
+      - name: Run down migrations
         run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose down -all
-        run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose up 
 
-      # - name: Build
-      #   run: go build -v ./...
+      - name: Run Down Migration
+        run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose up
 
       - name: Test
         run: go test -v ./...
