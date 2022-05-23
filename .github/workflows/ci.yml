@@ -45,7 +45,8 @@ jobs:
           which migrate
 
       - name: Run migrations
-        run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose down -yes
+        run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose down -all
+        run: migrate --path db/migration --database "postgresql://admin:admin@localhost:5432/simple_bank?sslmode=disable" --verbose up 
 
       # - name: Build
       #   run: go build -v ./...
