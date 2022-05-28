@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/codernirmalnp/golang/db/util"
+	"github.com/codernirmalnp/golang/util"
 	"github.com/stretchr/testify/require"
 )
 

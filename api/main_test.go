@@ -14,7 +14,7 @@ import (
 func NewTestServer(t *testing.T, store db.Store) *Server {
 	config := util.Config{
 		TokenKey:      util.RandomString(32),
-		TokenDuration: time.Minute.String(),
+		TokenDuration: time.Minute,
 	}
 	server, err := NewServer(config, store)
 	require.NoError(t, err)

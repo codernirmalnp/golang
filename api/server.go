@@ -15,7 +15,7 @@ import (
 type Server struct {
 	config     util.Config
 	store      db.Store
-	tokenMaker *token.Maker
+	tokenMaker token.Maker
 	router     *gin.Engine
 }
 
@@ -24,7 +24,7 @@ func NewServer(config util.Config, store db.Store) (*Server, error) {
 	if err != nil {
 		return nil, fmt.Errorf("cannot Create token maker:%w", err)
 	}
-	server := &Server{config: config, store: store, tokenMaker: &tokenMaker}
+	server := &Server{config: config, store: store, tokenMaker: tokenMaker}
 	router := gin.Default()
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
 		v.RegisterValidation("currency", validCurrency)

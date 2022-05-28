@@ -6,7 +6,7 @@ import (
 	"log"
 
 	db "github.com/codernirmalnp/golang/db/sqlc"
-	"github.com/codernirmalnp/golang/db/util"
+	"github.com/codernirmalnp/golang/util"
 
 	"github.com/codernirmalnp/golang/api"
 
