@@ -13,7 +13,7 @@ import (
 
 	mockdb "github.com/codernirmalnp/golang/db/mock"
 	db "github.com/codernirmalnp/golang/db/sqlc"
-	"github.com/codernirmalnp/golang/db/util"
+	"github.com/codernirmalnp/golang/util"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"github.com/lib/pq"
@@ -179,7 +179,7 @@ func TestCreateUserAPI(t *testing.T) {
 			store := mockdb.NewMockStore(ctrl)
 			tc.buildStubs(store)
 
-			server := NewServer(store)
+			server := NewTestServer(t, store)
 			recorder := httptest.NewRecorder()
 
 			// Marshal body data to JSON

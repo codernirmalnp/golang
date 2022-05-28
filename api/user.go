@@ -5,7 +5,7 @@ import (
 	"time"
 
 	db "github.com/codernirmalnp/golang/db/sqlc"
-	"github.com/codernirmalnp/golang/db/util"
+	"github.com/codernirmalnp/golang/util"
 	"github.com/lib/pq"
 
 	"github.com/gin-gonic/gin"
@@ -64,4 +64,16 @@ func (server *Server) CreateUser(ctx *gin.Context) {
 		CreatedAt:         user.CreatedAt,
 	}
 	ctx.JSON(http.StatusOK, res)
+}
+
+type CreateLoginRequest struct {
+	Username string `json:"username" binding:"required"`
+	Password string `json:"password" binding:"required,min=6"`
+}
+type CreateLoginResponse struct {
+	Username          string    `json:"username"`
+	FullName          string    `json:"full_name"`
+	Email             string    `json:"email"`
+	PasswordChangedAt time.Time `json:"password_changed_at"`
+	CreatedAt         time.Time `json:"created_at"`
 }

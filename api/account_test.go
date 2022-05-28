@@ -12,7 +12,7 @@ import (
 
 	mockdb "github.com/codernirmalnp/golang/db/mock"
 	db "github.com/codernirmalnp/golang/db/sqlc"
-	"github.com/codernirmalnp/golang/db/util"
+	"github.com/codernirmalnp/golang/util"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 )
@@ -75,7 +75,7 @@ func TestGetAccountApi(t *testing.T) {
 			store := mockdb.NewMockStore(ctr)
 			tc.buildStubs(store)
 
-			server := NewServer(store)
+			server := NewTestServer(t, store)
 			recorder := httptest.NewRecorder()
 			url := fmt.Sprintf("/accounts/%d", tc.accountID)
 			request, err := http.NewRequest(http.MethodGet, url, nil)

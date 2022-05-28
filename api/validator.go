@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/codernirmalnp/golang/db/util"
+	"github.com/codernirmalnp/golang/util"
 	"github.com/go-playground/validator/v10"
 )
 
