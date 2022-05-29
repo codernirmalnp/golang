@@ -104,13 +104,14 @@ func (server *Server) LoginUser(ctx *gin.Context) {
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
 		return
 	}
-	err = util.CheckPassword(user.HashedPassword, req.Password)
+
+	err = util.CheckPassword(req.Password, user.HashedPassword)
 	if err != nil {
 		ctx.JSON(http.StatusUnauthorized, errorResponse(err))
 		return
 	}
 
-	accessToken, err := server.tokenMaker.CreateToken(user.Username, server.config.TokenDuration)
+	accessToken, _, err := server.tokenMaker.CreateToken(user.Username, server.config.TokenDuration)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
 		return

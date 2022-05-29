@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/aead/chacha20poly1305"
 	"github.com/o1egl/paseto"
-	"golang.org/x/crypto/chacha20poly1305"
 )
 
 type PasetoMakes struct {
@@ -23,13 +23,14 @@ func NewPasetoMaker(symmetrickey string) (Maker, error) {
 
 }
 
-func (maker *PasetoMakes) CreateToken(username string, duration time.Duration) (string, error) {
+func (maker *PasetoMakes) CreateToken(username string, duration time.Duration) (string, *Payload, error) {
 	payload, err := NewPayload(username, duration)
 	if err != nil {
-		return "", err
+		return "", payload, err
 	}
 
-	return maker.pasteo.Encrypt(maker.symmetrickey, payload, nil)
+	token, err := maker.pasteo.Encrypt(maker.symmetrickey, payload, nil)
+	return token, payload, err
 
 }
 

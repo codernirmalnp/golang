@@ -20,7 +20,7 @@ type Server struct {
 }
 
 func NewServer(config util.Config, store db.Store) (*Server, error) {
-	tokenMaker, err := token.NewPasetoMaker(config.TokenKey)
+	tokenMaker, err := token.NewMarker(config.TokenKey)
 	if err != nil {
 		return nil, fmt.Errorf("cannot Create token maker:%w", err)
 	}
@@ -30,11 +30,15 @@ func NewServer(config util.Config, store db.Store) (*Server, error) {
 		v.RegisterValidation("currency", validCurrency)
 	}
 	router.GET("/", server.Test)
-	router.POST("/accounts", server.CreateAccount)
-	router.GET("/accounts/:id", server.getAccount)
-	router.GET("/accounts", server.listAccount)
-	router.POST("/transfers", server.CreateTransfer)
 	router.POST("/users", server.CreateUser)
+	router.POST("/users/login", server.LoginUser)
+
+	authRoutes := router.Group("/").Use(authMiddleware(server.tokenMaker))
+	authRoutes.POST("/accounts", server.CreateAccount)
+	authRoutes.GET("/accounts/:id", server.getAccount)
+	authRoutes.GET("/accounts", server.listAccount)
+	authRoutes.POST("/transfers", server.CreateTransfer)
+
 	server.router = router
 	return server, nil
 

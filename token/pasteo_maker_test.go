@@ -16,7 +16,7 @@ func TestPasteoMaker(t *testing.T) {
 	duration := time.Minute
 	issuedAt := time.Now()
 	expiredAt := time.Now().Add(duration)
-	token, err := maker.CreateToken(username, duration)
+	token, _, err := maker.CreateToken(username, duration)
 	fmt.Println(err)
 	require.NoError(t, err)
 	require.NotEmpty(t, token)
