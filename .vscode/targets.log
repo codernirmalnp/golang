@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 11:57:38 2022
+# Make data base, printed on Mon May 30 07:05:35 2022
 
 # Variables
 
@@ -53,7 +51,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:45003
+JOURNAL_STREAM = 8:46807
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -75,11 +73,11 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=36edfb46a3e391d0045ba7716293075d
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=d64e8a2c1b7ed56a973f336f62941b3e
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1814
+MANAGERPID = 1808
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -97,7 +95,7 @@ PATH = /snap/go/current/bin:/home/nirmal/.nvm/versions/node/v16.15.0/bin:/usr/lo
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/nirmal-Legion-5-15ACH6:@/tmp/.ICE-unix/2088,unix/nirmal-Legion-5-15ACH6:/tmp/.ICE-unix/2088
+SESSION_MANAGER = local/nirmal-Legion-5-15ACH6:@/tmp/.ICE-unix/2081,unix/nirmal-Legion-5-15ACH6:/tmp/.ICE-unix/2081
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -119,7 +117,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 4dcceb4a3a834b14bef9cc99c84f48c0
+INVOCATION_ID = df31eea706834f2ea1861103aa3b7cd2
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -143,7 +141,7 @@ PWD = /home/nirmal/Desktop/simplebank
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2014
+SSH_AGENT_PID = 2004
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -199,7 +197,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-436b4a7b-254c-4f2f-9587-f725699c7142.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e37e48e6-dcb8-474d-abd1-fb6c40d37c3a.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -259,11 +257,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/22dc6b0e_e6df_4627_af4d_cf98c4a1806c
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/81fb78aa_3a54_49f2_9699_e47817d1d46c
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.590
+GNOME_TERMINAL_SERVICE = :1.100
 # default
 SUFFIXES := 
 # environment
@@ -277,6 +275,9 @@ WINDOWPATH = 2
 # environment
 LC_IDENTIFICATION = bho_NP
 # default
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 .RECIPEPREFIX := 
 # environment
 LC_ADDRESS = bho_NP
@@ -285,10 +286,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 38453
- 
+VSCODE_PID = 4793
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=36edfb46a3e391d0045ba7716293075d
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=d64e8a2c1b7ed56a973f336f62941b3e
 # variable set hash-table stats:
 # Load=138/1024=13%, Rehash=0, Collisions=20/163=12%
 
@@ -489,6 +489,6 @@ mock:
 # strcache performance: lookups = 76 / hit rate = 50%
 # hash-table stats:
 # Load=38/8192=0%, Rehash=0, Collisions=1/76=1%
-# Finished Make data base on Sun May 29 11:57:38 2022
+# Finished Make data base on Mon May 30 07:05:35 2022
 
  
