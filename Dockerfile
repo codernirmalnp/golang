@@ -7,5 +7,5 @@ FROM alpine:3.16
 WORKDIR /app
 COPY --from=builder /app/main .
 COPY app.env .
-EXPOSE 5000 5000
+EXPOSE 5000
 CMD [ "/app/main" ]
