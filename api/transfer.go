@@ -2,10 +2,12 @@ package api
 
 import (
 	"database/sql"
+	"errors"
 	"fmt"
 	"net/http"
 
 	db "github.com/codernirmalnp/golang/db/sqlc"
+	"github.com/codernirmalnp/golang/token"
 	"github.com/gin-gonic/gin"
 )
 
@@ -22,11 +24,20 @@ func (server *Server) CreateTransfer(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, errorResponse(err))
 		return
 	}
-	if !server.validCurrency(ctx, req.FromAccountID, req.Currency) {
+	fromAccount, valid := server.validCurrency(ctx, req.FromAccountID, req.Currency)
+	if !valid {
 		return
 	}
+	authPayload := ctx.MustGet(authorizationPayloadKey).(*token.Payload)
+	if fromAccount.Owner != authPayload.Username {
+		err := errors.New("From account doesnot belong to authenticated user")
+		ctx.JSON(http.StatusUnauthorized, errorResponse(err))
+		return
 
-	if !server.validCurrency(ctx, req.ToAccountID, req.Currency) {
+	}
+	_, valid = server.validCurrency(ctx, req.ToAccountID, req.Currency)
+
+	if !valid {
 		return
 	}
 	arg := db.CreateTransferParams{
@@ -41,21 +52,21 @@ func (server *Server) CreateTransfer(ctx *gin.Context) {
 	}
 	ctx.JSON(http.StatusOK, result)
 }
-func (server *Server) validCurrency(ctx *gin.Context, accountId int64, currency string) bool {
+func (server *Server) validCurrency(ctx *gin.Context, accountId int64, currency string) (db.Account, bool) {
 	account, err := server.store.GetAccount(ctx, accountId)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			ctx.JSON(http.StatusNotFound, errorResponse(err))
-			return false
+			return account, false
 		}
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
-		return false
+		return account, false
 	}
 	if account.Currency != currency {
 		err := fmt.Errorf("account [%d] currency mismatch %s vs %s", accountId, account.Currency, currency)
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
-		return false
+		return account, false
 	}
-	return true
+	return account, true
 
 }
