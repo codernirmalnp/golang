@@ -1,5 +1,4 @@
-DB_URL=postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable
-
+DB_URL=postgresql://admin:admin@172.17.0.2:5432/simple_bank?sslmode=disable
 network:
 	docker network create bank-network
 
@@ -43,7 +42,7 @@ server:
 	go run main.go
 
 mock:
-	mockgen -package mockdb -destination db/mock/store.go github.com/techschool/simplebank/db/sqlc Store
+	mockgen -package mockdb -destination db/mock/store.go github.com/codernirmalnp/golang/db/sqlc Store
 
 proto:
 	rm -f pb/*.go

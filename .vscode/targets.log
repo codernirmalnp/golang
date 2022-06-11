@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 30 07:05:35 2022
+# Make data base, printed on Sat Jun 11 20:19:13 2022
 
 # Variables
 
@@ -45,13 +47,13 @@ CURDIR := /home/nirmal/Desktop/simplebank
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/97
+SNAP_DATA = /var/snap/code/98
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:46807
+JOURNAL_STREAM = 8:56854
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -73,11 +75,11 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=d64e8a2c1b7ed56a973f336f62941b3e
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=1a08b5a28fd86220b6eef07462a4a322
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1808
+MANAGERPID = 1825
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -87,7 +89,7 @@ VSCODE_CWD = /home/nirmal/Desktop/simplebank
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -95,19 +97,19 @@ PATH = /snap/go/current/bin:/home/nirmal/.nvm/versions/node/v16.15.0/bin:/usr/lo
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/nirmal-Legion-5-15ACH6:@/tmp/.ICE-unix/2081,unix/nirmal-Legion-5-15ACH6:/tmp/.ICE-unix/2081
+SESSION_MANAGER = local/nirmal-Legion-5-15ACH6:@/tmp/.ICE-unix/2098,unix/nirmal-Legion-5-15ACH6:/tmp/.ICE-unix/2098
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/nirmal/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/97
+SNAP = /snap/code/98
 # environment
 GOPATH = /home/nirmal/go
 # environment
 NVM_BIN = /home/nirmal/.nvm/versions/node/v16.15.0/bin
 # environment
-SNAP_VERSION = c3511e6c
+SNAP_VERSION = 4af164ea
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -117,9 +119,9 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = df31eea706834f2ea1861103aa3b7cd2
+INVOCATION_ID = cdd8b72b8db74a6497efc37149569f32
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/98/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -141,7 +143,7 @@ PWD = /home/nirmal/Desktop/simplebank
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2004
+SSH_AGENT_PID = 2023
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -155,7 +157,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/nirmal/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /home/nirmal/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LOGNAME = nirmal
 # environment
@@ -191,19 +193,19 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/nirmal/snap/code/97
+SNAP_USER_DATA = /home/nirmal/snap/code/98
 # environment
 SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e37e48e6-dcb8-474d-abd1-fb6c40d37c3a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-526eba24-5b3e-410e-86ee-d0cf045f6631.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = nirmal
 # environment
-SNAP_REVISION = 97
+SNAP_REVISION = 98
 # environment
 LC_MONETARY = bho_NP
 # makefile
@@ -211,7 +213,7 @@ LC_MONETARY = bho_NP
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # makefile (from 'Makefile', line 1)
-DB_URL = postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable
+DB_URL = postgresql://admin:admin@172.17.0.2:5432/simple_bank?sslmode=disable
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -223,7 +225,7 @@ MAKE_COMMAND := make
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-bcaa8ef5-1.67.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-bcaa8ef5-1.68.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -238,6 +240,8 @@ NVM_DIR = /home/nirmal/.nvm
 GDK_BACKEND = x11
 # environment
 LC_PAPER = bho_NP
+# environment
+NO_AT_BRIDGE = 1
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -257,11 +261,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/81fb78aa_3a54_49f2_9699_e47817d1d46c
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a4e232f0_c40d_4718_9948_74e3bb7b75d9
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.100
+GNOME_TERMINAL_SERVICE = :1.141
 # default
 SUFFIXES := 
 # environment
@@ -275,9 +279,6 @@ WINDOWPATH = 2
 # environment
 LC_IDENTIFICATION = bho_NP
 # default
- 
-make: *** No rule to make target 'all'.  Stop.
-
 .RECIPEPREFIX := 
 # environment
 LC_ADDRESS = bho_NP
@@ -286,11 +287,12 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4793
+VSCODE_PID = 4051
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=d64e8a2c1b7ed56a973f336f62941b3e
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=1a08b5a28fd86220b6eef07462a4a322
+ 
 # variable set hash-table stats:
-# Load=138/1024=13%, Rehash=0, Collisions=20/163=12%
+# Load=139/1024=14%, Rehash=0, Collisions=20/164=12%
 
 # Pattern-specific Variable Values
 
@@ -298,9 +300,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=d64e8a2c1b7ed56a973f336
 
 # Directories
 
-# . (device 66306, inode 27661906): 15 files, no impossibilities.
+# . (device 66306, inode 27661906): 16 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -313,7 +315,7 @@ postgres:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 7):
+#  recipe to execute (from 'Makefile', line 6):
 	docker run --name postgres --network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
 
 network:
@@ -321,7 +323,7 @@ network:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
+#  recipe to execute (from 'Makefile', line 3):
 	docker network create bank-network
 
 # Not a target:
@@ -336,7 +338,7 @@ migratedown1:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 28):
+#  recipe to execute (from 'Makefile', line 27):
 	migrate -path db/migration -database "$(DB_URL)" -verbose down 1
 
 .PHONY: network postgres createdb dropdb migrateup migratedown migrateup1 migratedown1 db_docs db_schema sqlc test server mock proto evans
@@ -349,13 +351,13 @@ sqlc:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 37):
+#  recipe to execute (from 'Makefile', line 36):
 	sqlc generate
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-29 11:48:22.477197996
+#  Last modified 2022-06-03 08:30:03.280545506
 #  File has been updated.
 #  Successfully updated.
 
@@ -364,7 +366,7 @@ server:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 43):
+#  recipe to execute (from 'Makefile', line 42):
 	go run main.go
 
 proto:
@@ -372,7 +374,7 @@ proto:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 49):
+#  recipe to execute (from 'Makefile', line 48):
 	rm -f pb/*.go
 	rm -f doc/swagger/*.swagger.json
 	protoc --proto_path=proto --go_out=pb --go_opt=paths=source_relative \
@@ -387,7 +389,7 @@ test:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 40):
+#  recipe to execute (from 'Makefile', line 39):
 	go test -v -cover ./...
 
 db_schema:
@@ -395,7 +397,7 @@ db_schema:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
+#  recipe to execute (from 'Makefile', line 33):
 	dbml2sql --postgres -o doc/schema.sql doc/db.dbml
 
 createdb:
@@ -403,7 +405,7 @@ createdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 13):
+#  recipe to execute (from 'Makefile', line 12):
 	docker exec -it postgres createdb --username=root --owner=root simple_bank
 
 evans:
@@ -411,7 +413,7 @@ evans:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 59):
+#  recipe to execute (from 'Makefile', line 58):
 	evans --host localhost --port 9090 -r repl
 
 # Not a target:
@@ -425,7 +427,7 @@ db_docs:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 31):
+#  recipe to execute (from 'Makefile', line 30):
 	dbdocs build doc/db.dbml
 
 dropdb:
@@ -433,7 +435,7 @@ dropdb:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
+#  recipe to execute (from 'Makefile', line 15):
 	docker exec -it postgres dropdb simple_bank
 
 migrateup:
@@ -441,14 +443,14 @@ migrateup:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 19):
+#  recipe to execute (from 'Makefile', line 18):
 	migrate -path db/migration -database "$(DB_URL)" -verbose up
 
 mysql:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 10):
+#  recipe to execute (from 'Makefile', line 9):
 	docker run --name mysql8 -p 3306:3306  -e MYSQL_ROOT_PASSWORD=secret -d mysql:8
 
 migrateup1:
@@ -456,7 +458,7 @@ migrateup1:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
+#  recipe to execute (from 'Makefile', line 21):
 	migrate -path db/migration -database "$(DB_URL)" -verbose up 1
 
 migratedown:
@@ -464,7 +466,7 @@ migratedown:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 25):
+#  recipe to execute (from 'Makefile', line 24):
 	migrate -path db/migration -database "$(DB_URL)" -verbose down
 
 mock:
@@ -472,8 +474,8 @@ mock:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 46):
-	mockgen -package mockdb -destination db/mock/store.go github.com/techschool/simplebank/db/sqlc Store
+#  recipe to execute (from 'Makefile', line 45):
+	mockgen -package mockdb -destination db/mock/store.go github.com/codernirmalnp/golang/db/sqlc Store
 
 # files hash-table stats:
 # Load=22/1024=2%, Rehash=0, Collisions=2/48=4%
@@ -483,12 +485,12 @@ mock:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 38 / storage = 292 B / avg = 7 B
-# current buf: size = 8162 B / used = 292 B / count = 38 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 39 / storage = 303 B / avg = 7 B
+# current buf: size = 8162 B / used = 303 B / count = 39 / avg = 7 B
 
-# strcache performance: lookups = 76 / hit rate = 50%
+# strcache performance: lookups = 77 / hit rate = 49%
 # hash-table stats:
-# Load=38/8192=0%, Rehash=0, Collisions=1/76=1%
-# Finished Make data base on Mon May 30 07:05:35 2022
+# Load=39/8192=0%, Rehash=0, Collisions=1/77=1%
+# Finished Make data base on Sat Jun 11 20:19:13 2022
 
  
